@@ -1,0 +1,268 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  font-family: sans-serif;
+  font-weight: bolder;
+  background-color: #5e864d;
+  color: #ffff;
+  height: 50vh;
+}
+
+.header h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.nav {
+  font-family: sans-serif;
+  font-weight: bolder;
+  margin-bottom: 2em;
+}
+
+.nav .nav_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 14px;
+}
+
+.border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.border_left {
+  width: 28em;
+  height: 7px;
+  background-color: #5e864d;
+}
+
+.border_right {
+  width: 28em;
+  height: 7px;
+  background-color: #f4f4f4;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input,
+.form-control textarea {
+  border: 2px solid #f0f0f0;
+  border-radius: 2px;
+  display: block;
+  font-size: 14px;
+  padding: 7px;
+  width: 100%;
+}
+
+.form-control small {
+  visibility: hidden;
+  font-family: "Muli", sans-serif;
+  color: #d63031;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.error input,
+.error textarea {
+  border-color: #e74c3c;
+}
+
+.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.success input,
+.success textarea {
+  border-color: #5e864d;
+}
+
+.success small {
+  color: #5e864d;
+  visibility: visible;
+}
+
+.main {
+  position: absolute;
+  left: 50%;
+  top: 6%;
+}
+
+.form {
+  background-color: #ffff;
+  -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  width: 900px;
+  margin-top: 2em;
+  padding: 30px;
+  position: relative;
+  left: -50%;
+}
+
+.form label {
+  font-family: sans-serif;
+  font-weight: bolder;
+  padding: 10px 0px 5px 0px;
+}
+
+.form label span {
+  color: #d63031;
+}
+
+.form button {
+  border: none;
+  border-radius: 200px;
+  background-color: #5e864d;
+  color: #ffff;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 16px;
+  padding: 9px 45px 9px 45px;
+}
+
+.contactForm {
+  background-color: #ffff;
+  -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  width: 900px;
+  margin-top: 2em;
+  padding: 30px;
+  position: relative;
+  left: -50%;
+}
+
+.contactForm label {
+  font-family: sans-serif;
+  font-weight: bolder;
+  padding: 10px 0px 5px 0px;
+}
+
+.contactForm label span {
+  color: #d63031;
+}
+
+.contactForm button {
+  border: none;
+  border-radius: 200px;
+  background-color: #5e864d;
+  color: #ffff;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bolder;
+  padding: 9px 45px 9px 45px;
+}
+
+.contactForm .border_left {
+  width: 28em;
+  height: 7px;
+  background-color: #f4f4f4;
+}
+
+.contactForm .border_right {
+  width: 28em;
+  height: 7px;
+  background-color: #5e864d;
+}
+
+.contactForm .fullName_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactForm .contact_info_btn button {
+  text-transform: none;
+  font-size: 16px;
+  width: 120px;
+  padding: 10px;
+}
+
+.success_box {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  top: 12%;
+}
+
+.success_box .success_box_position {
+  background-color: #ffff;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  width: 50%;
+  height: 300px;
+  margin: auto;
+  padding: 55px;
+  text-align: center;
+  font-family: "Muli", sans-serif;
+}
+
+.success_box .success_box_position i {
+  color: #5e864d;
+  font-size: 80px;
+}
+
+.success_box .success_box_position h3 {
+  font-size: 30px;
+  margin-top: 1.5em;
+}
+
+.contactForm {
+  display: none;
+}
+
+.success_box {
+  display: none;
+}
+
+#sendBtn {
+  position: relative;
+  left: 16%;
+  top: 5px;
+}
+
+#backForm {
+  visibility: hidden;
+  position: absolute;
+  left: -48%;
+  bottom: 4.2%;
+}
+
+#backForm button {
+  border: none;
+  border-radius: 200px;
+  background-color: #5e864d;
+  color: #ffff;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bolder;
+  padding: 12px 30px 12px 30px;
+}
+/*# sourceMappingURL=style.css.map */

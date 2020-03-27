@@ -1,0 +1,248 @@
+$muli: "Muli", sans-serif;
+$primaryCol: #5e864d;
+$formCol: #d63031;
+$white: #ffff;
+$correct: #5e864d;
+$error: #e74c3c;
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  font-family: sans-serif;
+  font-weight: bolder;
+  background-color: $primaryCol;
+  color: $white;
+  height: 50vh;
+  h1 {
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+.nav {
+  // display: flex;
+  // justify-content: space-around;
+  font-family: sans-serif;
+  font-weight: bolder;
+  margin-bottom: 2em;
+  .nav_links {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+  }
+}
+
+.border {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.border_left {
+  width: 28em;
+  height: 7px;
+  background-color: $primaryCol;
+}
+
+.border_right {
+  width: 28em;
+  height: 7px;
+  background-color: #f4f4f4;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+  label {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  input,
+  textarea {
+    border: 2px solid #f0f0f0;
+    border-radius: 2px;
+    display: block;
+    font-size: 14px;
+    padding: 7px;
+    width: 100%;
+  }
+  small {
+    visibility: hidden;
+    font-family: $muli;
+    color: $formCol;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+}
+
+.error input,
+.error textarea {
+  border-color: $error;
+}
+
+.error small {
+  color: $error;
+  visibility: visible;
+}
+
+.success input,
+.success textarea {
+  border-color: $correct;
+}
+
+.success small {
+  color: $correct;
+  visibility: visible;
+}
+
+.main {
+  position: absolute;
+  left: 50%;
+  top: 6%;
+}
+
+.form {
+  background-color: $white;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  width: 900px;
+  margin-top: 2em;
+  padding: 30px;
+  position: relative;
+  left: -50%;
+  label {
+    font-family: sans-serif;
+    font-weight: bolder;
+    padding: 10px 0px 5px 0px;
+    span {
+      color: $formCol;
+    }
+  }
+  button {
+    border: none;
+    border-radius: 200px;
+    background-color: $primaryCol;
+    color: $white;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+    padding: 9px 45px 9px 45px;
+  }
+}
+
+.contactForm {
+  background-color: $white;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  width: 900px;
+  margin-top: 2em;
+  padding: 30px;
+  position: relative;
+  left: -50%;
+  label {
+    font-family: sans-serif;
+    font-weight: bolder;
+    padding: 10px 0px 5px 0px;
+    span {
+      color: $formCol;
+    }
+  }
+  button {
+    border: none;
+    border-radius: 200px;
+    background-color: $primaryCol;
+    color: $white;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bolder;
+    padding: 9px 45px 9px 45px;
+  }
+  .border_left {
+    width: 28em;
+    height: 7px;
+    background-color: #f4f4f4;
+  }
+
+  .border_right {
+    width: 28em;
+    height: 7px;
+    background-color: $primaryCol;
+  }
+  .fullName_input {
+    display: flex;
+  }
+  .contact_info_btn {
+    button {
+      text-transform: none;
+      font-size: 16px;
+      width: 120px;
+      padding: 10px;
+    }
+  }
+}
+
+.success_box {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  top: 12%;
+  .success_box_position {
+    background-color: $white;
+    border-radius: 8px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    width: 50%;
+    height: 300px;
+    margin: auto;
+    padding: 55px;
+    text-align: center;
+    font-family: $muli;
+    i {
+      color: $primaryCol;
+      font-size: 80px;
+    }
+    h3 {
+      font-size: 30px;
+      margin-top: 1.5em;
+    }
+  }
+}
+
+.contactForm {
+  display: none;
+}
+
+.success_box {
+  display: none;
+}
+
+#sendBtn {
+  position: relative;
+  left: 16%;
+  top: 5px;
+}
+
+#backForm {
+  visibility: hidden;
+  position: absolute;
+  left: -48%;
+  bottom: 4.2%;
+  button {
+    border: none;
+    border-radius: 200px;
+    background-color: $primaryCol;
+    color: $white;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bolder;
+    padding: 12px 30px 12px 30px;
+  }
+}

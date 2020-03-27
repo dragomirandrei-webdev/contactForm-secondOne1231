@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--FONTS-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 id="h1">Let Us Know How We Can Help</h1>
+      </div>
+      <div class="main">
+        <form onsubmit="return sendToNextForm()" class="form" id="form">
+          <div class="nav">
+            <div class="border">
+              <div class="border_left"></div>
+              <div class="border_right"></div>
+            </div>
+            <div class="nav_links">
+              <h2>Reason for Contact</h2>
+              <h2>Contact Information</h2>
+            </div>
+          </div>
+          <div class="contact_reason">
+            <div class="form-control">
+              <label>How can we help? <span>*</span></label>
+              <input type="text" placeholder="Subject" id="firstSubject" />
+              <small>You should write something.</small>
+            </div>
+
+            <div class="form-control">
+              <label>Subject <span>*</span></label>
+              <input type="text" placeholder="Subject" id="secondSubject" />
+              <small>You should write something.</small>
+            </div>
+
+            <div class="form-control">
+              <label>Message <span>*</span></label>
+              <textarea
+                id="message"
+                cols="30"
+                rows="7"
+                placeholder="Add Your Message Here"
+              ></textarea>
+              <small>You should write a message.</small>
+            </div>
+
+            <div class="form-control">
+              <label>How Did you hear about us?</label>
+              <input
+                id="feedback"
+                type="text"
+                placeholder="How Did you hear about us?"
+              />
+            </div>
+
+            <button id="reasonBtn" style="cursor: pointer;" type="submit">
+              Submit
+            </button>
+          </div>
+        </form>
+
+        <form
+          onsubmit="return checkInfoInput()"
+          class="contactForm"
+          id="contact_form"
+        >
+          <div class="nav">
+            <div class="border">
+              <div class="border_left"></div>
+              <div class="border_right"></div>
+            </div>
+            <div class="nav_links">
+              <h2>Reason for Contact</h2>
+              <h2>Contact Information</h2>
+            </div>
+          </div>
+          <div class="contact_reason">
+            <div class="form-control">
+              <label>Name <span>*</span></label>
+              <div class="fullName_input">
+                <input
+                  style="margin-right: 20px;"
+                  type="text"
+                  placeholder="First"
+                  id="firstName"
+                />
+                <small>You should write your name.</small>
+                <input type="text" placeholder="Last" id="secondName" />
+              </div>
+            </div>
+
+            <div class="form-control">
+              <label>Email <span>*</span></label>
+              <input type="email" placeholder="Email" id="email" />
+              <small>You should write your email.</small>
+            </div>
+
+            <div class="form-control">
+              <label>Phone <span>*</span></label>
+              <input type="text" placeholder="Phone" id="phoneNumber" />
+              <small>You should write your phone number.</small>
+            </div>
+
+            <div class="form-control">
+              <label>Company</label>
+              <input id="company" type="text" placeholder="Company" />
+            </div>
+
+            <div class="contact_info_btn">
+              <button id="sendBtn" type="submit" style="cursor: pointer;">
+                Send
+              </button>
+            </div>
+          </div>
+        </form>
+        <form id="backForm" onsubmit="return goBack()">
+          <button id="previousBtn" type="submit" style="cursor: pointer;">
+            Previous
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div id="congrats" class="success_box">
+      <div class="success_box_position">
+        <i class="fas fa-envelope-open-text"></i>
+        <h3>Your email was sent to us.</h3>
+      </div>
+    </div>
+    <!--SmtpJS Email API-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!--JS-->
+    <script src="assets/js/script.js"></script>
+    <!--ICONS-->
+    <script
+      src="https://kit.fontawesome.com/7f374e2c1f.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

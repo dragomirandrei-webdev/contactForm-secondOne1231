@@ -1,0 +1,23 @@
+PAGINA NU TREBUIE SA FACA REFRESH
+
+Reguli: 
+
+1. Fiecare field trebuie sa aiba validare
+2. Field-urile cu * sunt obligatorii
+3. Nu poti trece la STEP 2, fara sa fie VALID step 1
+4. La submit final sa iti trimita pe email toate informatiile din el
+
+la Step 2 (adica la Contact Information)
+
+
+poti sa pui orice
+
+cateva field-uri la misto
+
+si vreau si buton de "Previous"
+
+
+
+care te duce inapoi la step 1
+
+
